@@ -1,0 +1,1 @@
+Personal programming and project portfolio that showcases the skills of the junior cyber security analyst Archie Forde. With projects in Cyber Security, Artificial Intelligence, Frontend development and general software engineering.
