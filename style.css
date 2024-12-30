@@ -192,7 +192,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     color: antiquewhite;
 }
 
@@ -220,9 +220,10 @@ section {
 .about-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
+    align-items: center;
 }
 
 .about-box h3 {
@@ -243,4 +244,125 @@ section {
 
 .about-box ul li {
     margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.experience-section {
+    background: #3b3b40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-section {
+    background: #4b4b50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section {
+    background: #5b5b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content, .experience-content, .projects-content, .contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+
+
+.hidden {
+    display: none;
+}
+
+.toggle-btn {
+    background-color: #2E3A4D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #1b1b1e;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #1b1b1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-name {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-name:hover {
+    color: #2E3A4D;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #2E3A4D;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #2E3A4D;
 }
