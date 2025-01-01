@@ -10,11 +10,19 @@
     <title>Portfolio</title>
 </head>
 
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+    }
+</style>
+
 <body>
     <header class="site-header">
         <div class="navbar">
             <a href="#home"><i class="fa-solid fa-house"></i></a>
-            <a href="#about"><i class="fa-solid fa-user"></i></a>
+            <a href="#about" ><i class="fa-solid fa-user"></i></a>
             <a href="#experience"><i class="fa-solid fa-code-branch"></i></a>
             <a href="#projects"><i class="fa-solid fa-code"></i></a>
             <a href="#contact"><i class="fa-solid fa-address-card"></i></a>
@@ -22,6 +30,7 @@
     </header>
 
     <section id="home" class="home-section">
+        <canvas id="canvas" style="background: #111;"></canvas>
         <div class="intro-container">
             <div class="intro-text">
                 <h6>Hello, my name is</h6>
@@ -64,19 +73,8 @@
                 </ul>
             </div>
             <div class="about-box">
-                <h3>Experience</h3>
-                <p>So far I have worked on one professional project which involved the research and development of a prototype which used natural language processing to understand queries about business documentation and reply to those queries. My internship at The Open Group provided me with practical experience in the industry and how software is created and deployed. It also allowed me to apply my skills in real-world scenarios.</p>
-            </div>
-            <div class="about-box">
                 <h3>Interests</h3>
                 <p>My professional interests include cybersecurity and artificial intelligence. In my free time, I enjoy creating my own projects, staying updated with the latest tech trends by reading the TLDR newsletter and I also frequently complete modules and labs on Hack The Box, the modules give me further knowledge on cybersecurity concepts while the labs give me hands-on practice applying those cybersecurity concepts. I would like to start participating in Capture The Flags and Hackathons.</p>
-            </div>
-            <div class="about-box">
-                <h3>Achievements</h3>
-                <ul>
-                    <li>Currently studying Computer Science with Software Engineering in the second year.</li>
-                    <li>Completed the Python 3 Codecademy Course.</li>
-                </ul>
             </div>
         </div>
     </section>
