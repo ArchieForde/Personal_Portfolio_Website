@@ -71,7 +71,7 @@ window.onload = function() {
 function downloadCVAndScroll() {
     const link = document.createElement('a');
     link.href = "";
-    link.download = 'Archie_Forde_CV.pdf'; 
+    link.download = 'ArchieFordeCV2025.pdf'; 
     link.click();
 
     document.querySelector('#contact').scrollIntoView({
