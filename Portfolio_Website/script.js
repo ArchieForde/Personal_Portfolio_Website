@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navbarLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            const targetId = link.getAttribute("href").substring(1); // Remove the '#' from the href
+            e.preventDefault(); 
+            const targetId = link.getAttribute("href").substring(1); 
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
@@ -70,7 +70,7 @@ window.onload = function() {
 
 function downloadCVAndScroll() {
     const link = document.createElement('a');
-    link.href = "";
+    link.href = "/Users/Archie_Forde/Documents/Personal_Portfolio_Website/Public/ArchieFordeCV2025.pdf";
     link.download = 'ArchieFordeCV2025.pdf'; 
     link.click();
 
