@@ -70,7 +70,7 @@ window.onload = function() {
 
 function downloadCVAndScroll() {
     const link = document.createElement('a');
-    link.href = "/Users/Archie_Forde/Documents/Personal_Portfolio_Website/Public/ArchieFordeCV2025.pdf";
+    link.href = "Public/ArchieFordeCV2025.pdf";
     link.download = 'ArchieFordeCV2025.pdf'; 
     link.click();
 
