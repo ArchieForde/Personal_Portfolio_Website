@@ -72,7 +72,7 @@ function downloadCVAndScroll() {
     console.log('Function triggered!'); 
 
     const link = document.createElement('a');
-    link.href = '/Users/Archie_Forde/Documents/Personal_Portfolio_Website/ArchieFordeCV2025.pdf'; 
+    link.href = 'ArchieFordeCV2025.pdf'; 
     link.download = 'ArchieFordeCV2025.pdf'; 
     console.log('Link href:', link.href); 
 
