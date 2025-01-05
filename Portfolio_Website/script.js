@@ -69,10 +69,15 @@ window.onload = function() {
 };
 
 function downloadCVAndScroll() {
+    console.log('Function triggered!'); 
+
     const link = document.createElement('a');
-    link.href = "Public/ArchieFordeCV2025.pdf";
+    link.href = '/Users/Archie_Forde/Documents/Personal_Portfolio_Website/ArchieFordeCV2025.pdf'; 
     link.download = 'ArchieFordeCV2025.pdf'; 
+    console.log('Link href:', link.href); 
+
     link.click();
+    console.log('Link clicked!'); 
 
     document.querySelector('#contact').scrollIntoView({
         behavior: 'smooth'
