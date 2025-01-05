@@ -72,8 +72,8 @@ function downloadCVAndScroll() {
     console.log('Function triggered!'); 
 
     const link = document.createElement('a');
-    link.href = 'ArchieFordeCV2025.pdf'; 
-    link.download = 'index.html/ArchieFordeCV2025.pdf'; 
+    link.href = 'index/ArchieFordeCV2025.pdf'; 
+    link.download = 'ArchieFordeCV2025.pdf'; 
     console.log('Link href:', link.href); 
 
     link.click();
