@@ -1,5 +1,66 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const terminalText = document.getElementById("terminal-text");
+    const cursor = document.getElementById("cursor");
+    const textContent = [
+        "$ Hi, my name is ARCHIE FORDE",
+        "Junior Cyber Security Engineer",
+        "Welcome to my portfolio!",
+    ];
+
+    let index = 0;
+    let charIndex = 0;
+    let typingSpeed = 100; // Speed of typing (in milliseconds)
+
+    function typeText() {
+        if (index < textContent.length) {
+            let currentText = textContent[index];
+            terminalText.innerHTML += currentText.charAt(charIndex);
+            charIndex++;
+
+            if (charIndex < currentText.length) {
+                setTimeout(typeText, typingSpeed); // Keep typing the current line
+            } else {
+                terminalText.innerHTML += '<br>$ '; // Add new prompt after each line
+                index++; // Move to the next line of text
+                charIndex = 0; // Reset char index for next line
+                setTimeout(typeText, typingSpeed); // Type the next line
+            }
+        } else {
+            // Once all lines are typed, repeat the process by resetting
+            setTimeout(() => {
+                terminalText.innerHTML = ''; // Clear the terminal text
+                index = 0; // Reset the line index
+                charIndex = 0; // Reset the character index
+                typeText(); 
+            }, 5000);
+        }
+    }
+    typeText();
+
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const navbarLinks = document.querySelectorAll(".navbar a");
+
+    navbarLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault(); 
+            const targetId = link.getAttribute("href").substring(1); 
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navbarLinks = document.querySelectorAll(".footer-nav a");
 
     navbarLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
@@ -69,15 +130,6 @@ window.onload = function() {
 };
 
 function downloadCVAndScroll() {
-    console.log('Function triggered!'); 
-
-    const link = document.createElement('a');
-    link.href = 'index.html/ArchieFordeCV2025.pdf'; 
-    link.download = 'ArchieFordeCV2025.pdf'; 
-    console.log('Link href:', link.href); 
-
-    link.click();
-    console.log('Link clicked!'); 
 
     document.querySelector('#contact').scrollIntoView({
         behavior: 'smooth'

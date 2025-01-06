@@ -10,14 +10,6 @@
     <title>Portfolio</title>
 </head>
 
-<style>
-    *{
-        margin: 0%;
-        padding: 0%;
-        overflow: hidden;
-    }
-</style>
-
 <body>
     <header class="site-header">
         <div class="navbar">
@@ -32,12 +24,12 @@
     <section id="home" class="home-section">
         <canvas id="canvas" style="background: #111;"></canvas>
         <div class="intro-container">
-            <div class="intro-text">
-                <h6>Hello, my name is</h6>
-                <h1>Archie Forde</h1>
-                <h5>Junior Cyber Security Engineer</h5>
+            <div id="terminal" class="terminal-box">
+                <span id="terminal-text"></span>
+                <span id="cursor"></span>
+            </div>
                 <div class="intro-text-box">
-                    <p>Welcome to my portfolio. I am currently completing my degree in Computer Science with Software Engineering, and I have a keen interest in Cyber Security. I am passionate about learning new technologies and applying them to solve real-world problems. Explore my projects and experiences to know more about my journey.</p>
+                    <p>I am currently completing my degree in Computer Science with Software Engineering, and I have a keen interest in Cyber Security. I am passionate about learning new technologies and applying them to solve real-world problems. Explore my projects and experiences to know more about my journey.</p>
                 </div>
                 <div class="intro-buttons">
                     <button id="download-cv" class="CV-btn" onclick="downloadCVAndScroll()">Download CV</button>
@@ -56,16 +48,16 @@
         <div class="about-content">
             <div class="about-box">
                 <h3>Introduction</h3>
-                <p>Hi, I'm Archie Forde, a dedicated and passionate Cyber Security Engineer currently completing my degree in Computer Science with a specialization in Software Engineering. My enthusiasm for technology drives me to constantly learn and innovate.</p>
+                <p>I am a dedicated and passionate Cyber Security Engineer currently completing my degree in Computer Science with a specialization in Software Engineering. My enthusiasm for technology drives me to constantly learn and innovate.</p>
             </div>
             <div class="about-box">
                 <h3>Background</h3>
-                <p>I am pursuing my degree at The University of Hull, where I have developed a strong foundation in computer science principles and have gained hands-on experience in software development. I am also currently studying the CompTIA Security + course to help gain a solid understanding in cybersecurity, enhancing my knowledge in this critical field.</p>
+                <p>I am pursuing my degree at The University of Hull, where I have developed a strong foundation in computer science principles and have gained hands-on experience in software development. I am also currently studying for the Google professional Cyber Security Certification to help gain a solid understanding in cybersecurity, enhancing my knowledge in this critical field. Then i shall use that knowledge to study for the CompTIA Security + certification.</p>
             </div>
             <div class="about-box">
                 <h3>Skills</h3>
                 <ul>
-                    <li>Programming Languages: C#, Python, C++</li>
+                    <li>Programming Languages: Python, C#,  C++</li>
                     <li>Web Development: HTML, CSS, Javascript </li>
                     <li>Database Management: MySQL</li>
                     <li>Tools and Technologies: Git, Nmap, Linux command line, BeautifulSoup</li>
@@ -74,7 +66,7 @@
             </div>
             <div class="about-box">
                 <h3>Interests</h3>
-                <p>My professional interests include cybersecurity and artificial intelligence. In my free time, I enjoy creating my own projects, staying updated with the latest tech trends by reading the TLDR newsletter and I also frequently complete modules and labs on Hack The Box, the modules give me further knowledge on cybersecurity concepts while the labs give me hands-on practice applying those cybersecurity concepts. I would like to start participating in Capture The Flags and Hackathons.</p>
+                <p>My professional interests include cybersecurity and artificial intelligence. In my free time, I enjoy creating my own projects, furthering my knowledge by reading relevant books, staying updated with the latest security trends by reading the TLDR newsletter and I also frequently complete modules and labs on Hack The Box, Codecademy and LeetCode, the modules give me a deeper understanding on cybersecurity concepts while the labs give me hands-on practice applying those cybersecurity concepts. I would like to start participating in Capture The Flags and Hackathons.</p>
             </div>
         </div>
     </section>
@@ -98,15 +90,14 @@
         <div class="footer-container">
             <a href="#home" class="footer-name">Archie Forde</a>
             <nav class="footer-nav">
-                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
             <div class="footer-social">
-                <a href="https://github.com/yourprofile" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/fordey18" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
