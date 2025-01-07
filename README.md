@@ -23,7 +23,7 @@ My Personal Portfolio was designed to showcase skills, experience, and projects 
 ## Steps
 
 Step 1: Wireframing and Layout Design
-The first step involved wireframing the overall layout and defining sections like "About Me," "Projects," "Skills," and "Contact." This phase ensured a logical flow of information and an intuitive user experience.
+The first step involved wireframing the overall layout and defining sections like "About Me," "Projects," "Experience," and "Contact." This phase ensured a logical flow of information and an intuitive user experience.
 
  
 Step 2: Coding the Framework
