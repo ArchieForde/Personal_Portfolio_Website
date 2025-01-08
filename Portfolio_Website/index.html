@@ -32,12 +32,13 @@
                     <p>I am currently completing my degree in Computer Science with Software Engineering, and I have a keen interest in Cyber Security. I am passionate about learning new technologies and applying them to solve real-world problems. Explore my projects and experiences to know more about my journey.</p>
                 </div>
                 <div class="intro-buttons">
-                    <button id="download-cv" class="CV-btn" onclick="downloadCVAndScroll()">Download CV</button>
+                    <button id="toggle-CV" class="CV-btn" onclick="">View My CV</button>
                     <button id="toggle-intro" class="Talk_More-btn" onclick="scrollToContact()">Talk More</button>
+                </div>
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/fordey18" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/ArchieForde" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -73,17 +74,87 @@
 
     <section id="experience" class="experience-section">
         <h2>Experience</h2>
-        <p>Details of my experience...</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">June 2024</div>
+                <div class="timeline-content">
+                    <h3>Internship Start</h3>
+                    <p>Began an internship focused on developing a prototype AI-powered NLP model for document extraction and query response generation.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">June–July 2024</div>
+                <div class="timeline-content">
+                    <h3>Research & Planning</h3>
+                    <p>Conducted research on NLP frameworks, tools, and datasets. Collaborated with team members to design a system architecture tailored to the business's document database.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">July–August 2024</div>
+                <div class="timeline-content">
+                    <h3>Prototype Development</h3>
+                    <p>Built a functional prototype leveraging NLP algorithms to extract and structure key data from business documentation. Integrated a query system to enable users to search and receive contextually relevant responses.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">August 2024</div>
+                <div class="timeline-content">
+                    <h3>Security Applications</h3>
+                    <p>While working on the NLP prototype, I gained exposure to how sensitive business data is stored, accessed, and processed securely. Considered security implications, such as protecting user queries and responses from unauthorized access.</p>
+                    <p>Developed an understanding of cybersecurity best practices, including data encryption, secure APIs, and access control, which are vital in safeguarding information retrieval systems.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">September 2024</div>
+                <div class="timeline-content">
+                    <h3>Showcase to Management</h3>
+                    <p>Presented the prototype to senior executives, demonstrating its ability to streamline information retrieval, improve decision-making processes and not fall behind in Artfiical implementation in business. Received positive feedback and suggestions for future iterations.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">September 2024</div>
+                <div class="timeline-content">
+                    <h3>Internship Completion</h3>
+                    <p>I finalized documentation and helped provide relevant recommendations for advancing the prototype into production, with considerations for securing the data pipeline and ensuring compliance with industry security standards.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
-        <p>Details of my projects...</p>
+        <p>Coming soon...</p>
     </section>
 
     <section id="contact" class="contact-section">
         <h2>Contact</h2>
-        <p>Contact information...</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Feel free to reach out to discuss career opportunities, projects, or collaborations!</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:archieforde18@gmail.com">archieforde18@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank">linkedin.com/ArchieForde</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/ArchieForde" target="_blank">github.com/archie-forde</a></li>
+                </ul>
+            </div>
+    
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contact-form" action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer class="site-footer">
@@ -96,7 +167,7 @@
                 <a href="#contact">Contact</a>
             </nav>
             <div class="footer-social">
-                <a href="https://github.com/fordey18" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/ArchieForde" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/archie-forde-234097265/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>

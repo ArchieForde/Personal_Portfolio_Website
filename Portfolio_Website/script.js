@@ -129,19 +129,15 @@ window.onload = function() {
     });
 };
 
-function downloadCVAndScroll() {
-
-    document.querySelector('#contact').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-
 function scrollToContact() {
     document.querySelector('#contact').scrollIntoView({
         behavior: 'smooth'
     });
 }
 
+document.getElementById('toggle-CV').onclick = function() {
+    window.open('https://drive.google.com/file/d/1K1CgTjUJ8yGJGrpAffsaD3yRvKD6L8LY/view?usp=sharing', '_blank');
+};
 
 document.getElementById('toggle-about').addEventListener('click', function() {
     var content = document.getElementById('about-content');
