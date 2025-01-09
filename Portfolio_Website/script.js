@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let index = 0;
     let charIndex = 0;
-    let typingSpeed = 100; // Speed of typing (in milliseconds)
+    let typingSpeed = 100; 
 
     function typeText() {
         if (index < textContent.length) {
@@ -18,19 +18,19 @@ document.addEventListener("DOMContentLoaded", function () {
             charIndex++;
 
             if (charIndex < currentText.length) {
-                setTimeout(typeText, typingSpeed); // Keep typing the current line
+                setTimeout(typeText, typingSpeed); 
             } else {
-                terminalText.innerHTML += '<br>$ '; // Add new prompt after each line
-                index++; // Move to the next line of text
-                charIndex = 0; // Reset char index for next line
-                setTimeout(typeText, typingSpeed); // Type the next line
+                terminalText.innerHTML += '<br>$ '; 
+                index++;
+                charIndex = 0; 
+                setTimeout(typeText, typingSpeed); 
             }
         } else {
-            // Once all lines are typed, repeat the process by resetting
+            
             setTimeout(() => {
-                terminalText.innerHTML = ''; // Clear the terminal text
-                index = 0; // Reset the line index
-                charIndex = 0; // Reset the character index
+                terminalText.innerHTML = ''; 
+                index = 0; 
+                charIndex = 0; 
                 typeText(); 
             }, 5000);
         }
@@ -39,6 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+const navbar = document.querySelector('.navbar');
+
+// Set the proximity threshold (how close the cursor needs to be to the left edge)
+const threshold = 50; // Cursor within 50px of the left edge triggers navbar
+
+// Listen for mousemove events
+window.addEventListener('mousemove', (event) => {
+  const mouseX = event.clientX; // Get mouse X position
+  
+  // If the mouse is within the threshold from the left edge, show the navbar
+  if (mouseX <= threshold) {
+    navbar.classList.add('open');
+  } else {
+    navbar.classList.remove('open');
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const navbarLinks = document.querySelectorAll(".navbar a");
@@ -136,7 +152,7 @@ function scrollToContact() {
 }
 
 document.getElementById('toggle-CV').onclick = function() {
-    window.open('https://drive.google.com/file/d/1K1CgTjUJ8yGJGrpAffsaD3yRvKD6L8LY/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1lv-FoacqLTGW0tBE0jg1x2N8VYoQIQwo/view?usp=sharing', '_blank');
 };
 
 document.getElementById('toggle-about').addEventListener('click', function() {
