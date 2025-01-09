@@ -41,14 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const navbar = document.querySelector('.navbar');
 
-// Set the proximity threshold (how close the cursor needs to be to the left edge)
-const threshold = 50; // Cursor within 50px of the left edge triggers navbar
+const threshold = 50; 
 
-// Listen for mousemove events
 window.addEventListener('mousemove', (event) => {
-  const mouseX = event.clientX; // Get mouse X position
+  const mouseX = event.clientX; 
   
-  // If the mouse is within the threshold from the left edge, show the navbar
   if (mouseX <= threshold) {
     navbar.classList.add('open');
   } else {
@@ -122,7 +119,6 @@ window.onload = function() {
             var y = drops[i] * fontSize;
             context.fillText(str[index], x, y);
 
-            // Reset drop to the top randomly
             if (y >= canvas.height && Math.random() > 0.99) {
                 drops[i] = 0;
             }
@@ -131,7 +127,6 @@ window.onload = function() {
     }
     setInterval(draw, 35);
 
-    // Adjust canvas size when the window is resized
     window.addEventListener('resize', function() {
         W = window.innerWidth;
         H = window.innerHeight;
@@ -152,7 +147,7 @@ function scrollToContact() {
 }
 
 document.getElementById('toggle-CV').onclick = function() {
-    window.open('https://drive.google.com/file/d/1lv-FoacqLTGW0tBE0jg1x2N8VYoQIQwo/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1GEHZRmvJHLCKk6yaOHUehXxSDfxZbne2/view?usp=sharing', '_blank');
 };
 
 document.getElementById('toggle-about').addEventListener('click', function() {
